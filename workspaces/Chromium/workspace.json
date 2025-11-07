@@ -16,7 +16,7 @@
   "categories": [
     "Browser"
   ],
-  "friendly_name": "SW EXAMPLE - Chromium",
+  "friendly_name": "DEV - Chromium Test",
   "architecture": [
     "amd64",
     "arm64"
@@ -28,7 +28,6 @@
       "uncompressed_size_mb": 2170,
       "available_tags": [
         "develop",
-        "1.17.0",
         "1.18.0"
       ]
     }
