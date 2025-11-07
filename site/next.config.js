@@ -4,8 +4,8 @@ const nextConfig = {
   output: 'export',
   distDir: '../public',
   env: {
-    name: 'SquirrelWorks Kasm Registry (DEV)',
-    description: 'SquirrelWorks Kasm Workspace Registry (DEV).',
+    name: 'SquirrelWorks Kasm Registry',
+    description: 'SquirrelWorks Kasm Workspace Registry.',
     icon: 'https://squirrelworksllc.github.io/kasm-registry/1.1/swlogo.png',
     listUrl: 'https://squirrelworksllc.github.io/kasm-registry/',
     contactUrl: '',
