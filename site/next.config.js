@@ -7,11 +7,11 @@ const nextConfig = {
     name: 'SquirrelWorks Kasm Registry',
     description: 'SquirrelWorks Kasm Workspace Registry.',
     icon: 'https://squirrelworksllc.github.io/kasm-registry/1.1/swlogo.png',
-    listUrl: 'https://squirrelworksllc.github.io/kasm-registry/1.1',
+    listUrl: 'https://squirrelworksllc.github.io/kasm-registry/',
     contactUrl: '',
   },
   reactStrictMode: true,
-  basePath: '/kasm-registry/1.1',
+  basePath: '/kasm-registry/1.0',
   trailingSlash: true,
   images: {
     unoptimized: true,
