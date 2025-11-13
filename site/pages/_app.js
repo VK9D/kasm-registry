@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import Layout from '../components/layout'
 import { useState, useEffect } from 'react'
-
+import '../styles/gray.css';
 
 function MyApp({ Component, pageProps }) {
   const [searchText, setSearchText] = useState('')

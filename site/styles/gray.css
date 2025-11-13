@@ -1,0 +1,63 @@
+/* Neutral/gray palette (tweak to taste) */
+:root{
+  --primary-50:#f9fafb;
+  --primary-100:#f3f4f6;
+  --primary-200:#e5e7eb;
+  --primary-300:#d1d5db;
+  --primary-400:#9ca3af;
+  --primary-500:#6b7280; /* base */
+  --primary-600:#4b5563; /* hover */
+  --primary-700:#374151; /* pressed/focus */
+  --primary-800:#1f2937;
+  --primary-900:#111827;
+}
+
+/* Links and accents */
+a,
+.link,
+.text-primary { color: var(--primary-700); }
+a:hover { color: var(--primary-800); }
+
+/* Primary buttons */
+.btn,
+.button,
+button.primary {
+  background: var(--primary-500);
+  border-color: var(--primary-600);
+  color: #fff;
+}
+.btn:hover,
+.button:hover,
+button.primary:hover {
+  background: var(--primary-600);
+  border-color: var(--primary-700);
+}
+
+/* Outlined buttons (if used) */
+button.outline,
+.btn-outline {
+  background: transparent;
+  color: var(--primary-700);
+  border: 1px solid var(--primary-400);
+}
+button.outline:hover,
+.btn-outline:hover {
+  border-color: var(--primary-600);
+  color: var(--primary-800);
+}
+
+/* Header bar / chips / badges that were blue */
+.header,
+.badge,
+.tag,
+.pill {
+  background: var(--primary-100);
+  color: var(--primary-700);
+  border-color: var(--primary-200);
+}
+
+/* Focus rings that were blue */
+:focus-visible {
+  outline: 2px solid var(--primary-500);
+  outline-offset: 2px;
+}
