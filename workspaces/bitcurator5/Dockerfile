@@ -3,7 +3,7 @@
 # For a working Docker image see "https://hub.docker.com/repository/docker/squirrelworksllc/bitcurator5"
 
 ##################### SOF ###################
-FROM kasmweb/kasmweb/ubuntu-noble-desktop
+FROM kasmweb/ubuntu-noble-desktop:1.18.0-rolling-weekly
 USER root
 ENV HOME=/home/kasm-default-profile
 ENV STARTUPDIR=/dockerstartup
@@ -12,15 +12,15 @@ WORKDIR $HOME
 
 ######### START Bitcurator Container Customizations ###########
 # Step 1 - Download and prep Bitcurator CLI
-RUN apt-get update && apt-get -y
-RUN apt-get install nano build-essential gcc make perl dkmswget curl gnupg sudo -y
-RUN curl -Lo /tmp wget https://github.com/BitCurator/bitcurator-cli/releases/download/v2.0.0/bitcurator-cli-linux
-RUN chmod +x /tmp/bitcurator-cli-linux
+RUN apt update && apt upgrade -y
+RUN apt install nano build-essential gcc make perl wget curl gnupg ca-certificates -y
+RUN apt install --reinstall ca-certificates -y
+RUN wget -O /tmp/bitcurator https://github.com/BitCurator/bitcurator-cli/releases/download/v2.0.0/bitcurator-cli-linux
+RUN chmod +x /tmp/bitcurator
 # Step 2 - Add kasm-user to the proper groups
-RUN groupadd bcadmin && \
-usermod -aG sudo,bcadmin kasm-user
+RUN groupadd bcadmin && usermod -aG sudo,bcadmin kasm-user
 # Step 3 - Install Bitcurator (will take some time)
-RUN DEBIAN_FRONTEND=noninteractive sudo bitcurator install --user=kasm-user
+RUN sudo /tmp/bitcurator install --user=kasm-user
 ######### END Bitcurator Container Customizations ###########
 
 RUN chown 1000:0 $HOME
