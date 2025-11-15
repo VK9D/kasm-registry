@@ -20,7 +20,7 @@ RUN chmod +x /tmp/bitcurator
 # Step 2 - Add kasm-user to the proper groups
 RUN groupadd bcadmin && usermod -aG sudo,bcadmin kasm-user
 # Step 3 - Install Bitcurator (will take some time)
-RUN sudo /tmp/bitcurator install --user=kasm-user
+RUN sudo /tmp/bitcurator install --mode=addon --user=kasm-user
 ######### END Bitcurator Container Customizations ###########
 
 RUN chown 1000:0 $HOME
