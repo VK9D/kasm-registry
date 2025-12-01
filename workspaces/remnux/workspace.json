@@ -1,0 +1,41 @@
+{
+  "description": "REMnux is a Linux toolkit for reverse-engineering and analyzing malicious software.",
+  "docker_registry": "https://index.docker.io/v1/",
+  "image_src": "remnux_wkspc.png",
+  "run_config": {
+    "hostname": "remnux"
+  },
+  "exec_config": {
+    "go": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --go --url \"$KASM_URL\"'"
+    },
+    "assign": {
+      "cmd": "bash -c '/dockerstartup/custom_startup.sh --assign --url \"$KASM_URL\"'"
+    }
+  },
+  "categories": [
+    "Desktop",
+    "Productivity",
+    "Malware",
+    "Incident Response",
+    "Reverse-Engineering",
+    "Analysis"
+  ],
+  "friendly_name": "REMnux",
+  "architecture": [
+    "amd64"
+  ],
+  "compatibility": [
+    {
+      "version": "1.18.x",
+      "image": "squirrelworksllc/remnux:1.18.0",
+      "cores": 2,
+      "memory": 4286,
+      "uncompressed_size_mb": 7380,
+      "available_tags": [
+        "1.18.0",
+        "develop"
+      ]
+    }
+  ]
+}
