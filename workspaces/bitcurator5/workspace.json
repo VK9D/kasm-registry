@@ -15,11 +15,8 @@
   },
   "categories": [
     "Desktop",
-    "Productivity",
-    "Archive",
-    "Forensics",
-    "Library",
-    "Information Science"
+    "Archival",
+    "Library"
   ],
   "friendly_name": "Bitcurator 5",
   "architecture": [
