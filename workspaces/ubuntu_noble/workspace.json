@@ -28,7 +28,7 @@
       "image": "squirrelworksllc/ubuntu-noble-desktop:1.18.0",
       "cores": 2,
       "memory": 2048,
-      "uncompressed_size_mb": 2974,
+      "uncompressed_size_mb": 3420,
       "available_tags": [
         "1.18.0",
         "develop"
