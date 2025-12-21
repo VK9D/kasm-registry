@@ -1,10 +1,11 @@
 export default function Header() {
   return (
-    <header className="w-full border-b border-gray-200 bg-white">
-      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <span className="text-lg font-semibold tracking-wide">
-          SquirrelWorks Kasm Registry
-        </span>
+    <header className="sw-header">
+      <div className="sw-header-inner">
+        <div className="sw-brand">
+          <div className="sw-title">SquirrelWorks Kasm Registry</div>
+          <div className="sw-subtitle">Workspaces · Channels · Versions</div>
+        </div>
       </div>
     </header>
   );

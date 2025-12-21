@@ -1,8 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-gray-200 bg-white mt-12">
-      <div className="max-w-7xl mx-auto px-6 py-4 text-sm text-gray-500">
-        © SquirrelWorks LLC
+    <footer className="sw-footer">
+      <div className="sw-footer-inner">
+        <span>© {new Date().getFullYear()} SquirrelWorks LLC</span>
+        <span className="sw-footer-muted">Kasm Registry Storefront</span>
       </div>
     </footer>
   );
