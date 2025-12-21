@@ -145,10 +145,10 @@ glob("**/workspace.json", async function (err, files) {
   const json = {
     name,
     workspacecount: workspacetotal,
-    icon, // NEVER null
-    description, // NEVER null
-    list_url: listUrl, // NEVER null
-    contact_url: contactUrl, // NEVER null (empty string ok)
+    icon: nextConfig.env.icon || "https://squirrelworksllc.github.io/kasm-registry/1.1/swlogo.png",
+    description: nextConfig.env.description || "",
+    list_url: nextConfig.env.listUrl || "https://squirrelworksllc.github.io/kasm-registry/",
+    contact_url: nextConfig.env.contactUrl || "",
     modified: Date.now(),
     workspaces,
     channels: Array.from(channels).sort(),
