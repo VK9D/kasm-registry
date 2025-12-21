@@ -8,10 +8,12 @@ export default function App({ Component, pageProps }) {
   const [search, setSearch] = useState("");
 
   return (
-    <>
+    <div className="min-h-screen flex flex-col">
       <Header search={search} setSearch={setSearch} />
-      <Component {...pageProps} search={search} />
+      <div className="flex-1">
+        <Component {...pageProps} search={search} />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
