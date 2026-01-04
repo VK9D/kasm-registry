@@ -3,7 +3,7 @@
   "image_src": "testing.png",
   "description": "REMnux is a Linux toolkit for reverse-engineering and analyzing malicious software.",
   "cores": 2,
-  "memory": 4286,
+  "memory": 6499,
   "cpu_allocation_method": "Inherit",
   "docker_registry": "https://index.docker.io/v1/",
   "categories": [
