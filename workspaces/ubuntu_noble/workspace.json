@@ -7,6 +7,16 @@
   "gpu_count": 0,
   "cpu_allocation_method": "Inherit",
   "docker_registry": "https://index.docker.io/v1/",
+
+  "exec_config": {
+    "go": {
+      "cmd": "bash -lc 'if [ -x /dockerstartup/tools/runtime_validation.sh ]; then /dockerstartup/tools/runtime_validation.sh; fi'"
+    },
+    "assign": {
+      "cmd": "bash -lc 'if [ -x /dockerstartup/tools/runtime_validation.sh ]; then /dockerstartup/tools/runtime_validation.sh; fi'"
+    }
+  },
+
   "categories": [
     "Desktop",
     "Productivity",
@@ -22,7 +32,7 @@
     {
       "version": "1.18.x",
       "image": "squirrelworksllc/ubuntu-noble-desktop:1.18.0",
-      "uncompressed_size_mb": 3539,
+      "uncompressed_size_mb": 3716,
       "available_tags": [
         "1.18.0",
         "develop"
