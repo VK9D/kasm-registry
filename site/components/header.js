@@ -29,7 +29,7 @@ export default function Header({ search, setSearch }) {
           {/* Brand */}
           <div className="text-center md:text-left">
             <div className="text-2xl font-extrabold tracking-tight text-white">
-              SquirrelWorks Kasm Registry
+              VK9D Kasm Registry
             </div>
             <div className="mt-1 text-xs tracking-[0.35em] uppercase text-white/70">
               Workspace Registry
