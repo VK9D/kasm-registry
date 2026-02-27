@@ -48,10 +48,10 @@ for BRANCH in $BRANCHES; do
   sed -i -E "s|^([[:space:]]*basePath:[[:space:]]*)['\"][^'\"]*['\"]|\1'/kasm-registry/${BRANCH}'|" site/next.config.js
 
   # env.icon -> .../<branch>/swlogo.png
-  sed -i -E "s|^([[:space:]]*icon:[[:space:]]*)['\"][^'\"]*['\"]|\1'https://squirrelworksllc.github.io/kasm-registry/${BRANCH}/swlogo.png'|" site/next.config.js
+  sed -i -E "s|^([[:space:]]*icon:[[:space:]]*)['\"][^'\"]*['\"]|\1'https://vk9d.github.io/kasm-registry/${BRANCH}/swlogo.png'|" site/next.config.js
 
   # env.listUrl -> .../<branch>/
-  sed -i -E "s|^([[:space:]]*listUrl:[[:space:]]*)['\"][^'\"]*['\"]|\1'https://squirrelworksllc.github.io/kasm-registry/'|" site/next.config.js
+  sed -i -E "s|^([[:space:]]*listUrl:[[:space:]]*)['\"][^'\"]*['\"]|\1'https://vk9d.github.io/kasm-registry/'|" site/next.config.js
 
   # Tell processing which channel this is (if you adopt the env-based default_channel logic)
   export KASM_CHANNEL="${BRANCH}"
