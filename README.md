@@ -52,23 +52,6 @@ kasm-registry/
 - [Build Pipeline](docs/BUILD_PIPELINE.md)
 - [Known Failure Modes](docs/KNOWN_FAILURES.md)
 
----
 
-## 🚑 Recovery Philosophy
 
-This registry is designed to be **fully regeneratable**.
-If something breaks, roll back `main` and let CI rebuild.
 
-No hotfixes. No panic edits.
-
----
-
-## 🧠 Design Goals
-
-- Static > Dynamic
-- Predictable > Clever
-- Recoverable > Fragile
-
----
-
-Maintained by **SquirrelWorks LLC**
