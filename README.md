@@ -2,7 +2,7 @@
   <img src="docs/images/Logo.png" alt="VK9D Kasm Registry Logo" width="300"><br>
 </p>
 
-# VK9D Kasm Registry
+# VK9D Kasm Registry.
 
 This repository hosts the **VK9D Kasm Workspace Registry**, a static, schema-aware registry designed to work seamlessly with **Kasm Workspaces**.
 
