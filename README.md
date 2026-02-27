@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="docs/images/Logo.png" alt="SquirrelWorks Kasm Registry Logo" width="300"><br>
+  <img src="docs/images/Logo.png" alt="VK9D Kasm Registry Logo" width="300"><br>
 </p>
 
-# SquirrelWorks Kasm Registry
+# VK9D Kasm Registry
 
-This repository hosts the **SquirrelWorks Kasm Workspace Registry**, a static, schema-aware registry designed to work seamlessly with **Kasm Workspaces**.
+This repository hosts the **VK9D Kasm Workspace Registry**, a static, schema-aware registry designed to work seamlessly with **Kasm Workspaces**.
 
 The registry:
 - Generates a Kasm-compatible `list.json`
@@ -16,8 +16,8 @@ The registry:
 
 ## 🌐 Live Registry
 
-- **Storefront:** https://squirrelworksllc.github.io/kasm-registry/1.1/
-- **Registry URL (for Kasm):** https://squirrelworksllc.github.io/kasm-registry/
+- **Storefront:** https://vk9d.github.io/kasm-registry/1.1/
+- **Registry URL (for Kasm):** https://vk9d.github.io/kasm-registry/
 
 ---
 
